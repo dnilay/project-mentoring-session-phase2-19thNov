@@ -9,47 +9,36 @@ public class Employee {
     private String email;
     private int age;
 
-    public void createEmployee(int employeeId,String firstName,String lastName,String email,int age)
-    {
-        if(employeeId<0 && employeeId>1000)
-        {
+    public void createEmployee(int employeeId, String firstName, String lastName, String email, int age) {
+        if (employeeId < 0 && employeeId > 1000) {
             System.out.println("invalid employee id");
+        } else {
+            this.employeeId = employeeId;
         }
-        else
-        {
-            this. employeeId=employeeId;
+        if (firstName.length() < 4) {
+            System.out.println("invalid first name.");
+        } else {
+            this.firstName = firstName;
         }
-     if(firstName.length()<4)
-     {
-         System.out.println("invalid first name.");
-     }
-     else {
-         this.firstName=firstName;
-     }
-        if(lastName.length()<3)
-        {
+        if (lastName.length() < 3) {
             System.out.println("invalid last name.");
+        } else {
+            this.lastName = lastName;
         }
-        else {
-            this.lastName=lastName;
-        }
-        if(!email.contains("@"))
-        {
+        if (!email.contains("@")) {
             System.out.println("invalid email.");
-        }
-        else {
-            this.email=email;
+        } else {
+            this.email = email;
         }
 
-        if(age<18 || age>99)
-        {
+        if (age < 18 || age > 99) {
             System.out.println("invalid age.");
+        } else {
+            this.age = age;
         }
-        else
-        {
-            this.age=age;
-        }
+
     }
+
 
 
     public String getDetails()
@@ -58,5 +47,23 @@ public class Employee {
                 +" Email: "+email+" Age: "+age;
     }
 
+    public int getEmployeeId() {
+        return employeeId;
+    }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public int getAge() {
+        return age;
+    }
 }

@@ -9,8 +9,8 @@ public class Main {
     public static void main(String[] args)
     {
         ToDo toDo=new ToDo();
-        ToDo toDo1=new ToDo(UUID.randomUUID().toString(),"Testing",false);
+        toDo.addToDo(UUID.randomUUID().toString(),"Test",true);
         System.out.println(toDo.getDetails());
-        System.out.println(toDo1.getDetails());
+
     }
 }

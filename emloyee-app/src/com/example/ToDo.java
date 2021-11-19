@@ -7,21 +7,50 @@ public class ToDo {
     private String todoId;
     private String todoName;
     private boolean isCompleted;
-
-
     public ToDo()
     {
-        todoId= UUID.randomUUID().toString();
-        todoName="Compile";
-        isCompleted=true;
+        /*this(UUID.randomUUID().toString());
+        System.out.println("within default constructor");
+*/
+    }
+    public ToDo(String todoId) {
+       this(todoId,"Compile");
+       System.out.println("within one arg constructor");
+    }
+    public ToDo(String todoId, String todoName) {
+        this(todoId,todoName,false);
+        System.out.println("within two args constructor");
+    }
+    public ToDo(String todoId, String todoName, boolean isCompleted)
+    {
+        System.out.println("within three args constructor beginning");
+        this.todoId=todoId;
+        this.todoName=todoName;
+        this.isCompleted=isCompleted;
+        System.out.println("within three args constructor end");
+
     }
 
-    public ToDo(String todoId,String todoName,boolean isCompleted)
+    public void  addToDo(String todoId)
+    {
+        this.todoId=todoId;
+
+    }
+    public void  addToDo(String todoId,String todoName)
+    {
+        this.todoId=todoId;
+        this.todoName=todoName;
+
+    }
+
+    public void  addToDo(String todoId,String todoName,boolean isCompleted)
     {
         this.todoId=todoId;
         this.todoName=todoName;
         this.isCompleted=isCompleted;
+
     }
+
 
     public String getDetails()
     {

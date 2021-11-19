@@ -9,6 +9,11 @@ public class Employee {
     private String email;
     private int age;
 
+    public Employee()
+    {
+
+    }
+
     public void createEmployee(int employeeId, String firstName, String lastName, String email, int age) {
         if (employeeId < 0 && employeeId > 1000) {
             System.out.println("invalid employee id");

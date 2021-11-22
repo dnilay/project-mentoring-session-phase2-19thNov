@@ -41,6 +41,10 @@ public class Employee {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	public String displayDetail() {
+		// TODO Auto-generated method stub
+		return "Employee ID:"+getEmployeeId()+" First Name: "+getFirstName()+" Last Name: "+getLastName()+" Email" +getEmail() ;
+	}
 	
 
 }

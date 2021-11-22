@@ -16,14 +16,14 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public Employee createEmployee(Employee employee) {
-		// TODO Auto-generated method stub
-		return null;
+		employees.add(employee);
+		return employee;
 	}
 
 	@Override
 	public List<Employee> getAllEmployees() {
 		// TODO Auto-generated method stub
-		return null;
+		return employees;
 	}
 
 }

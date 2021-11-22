@@ -37,8 +37,9 @@ public class App {
 				String lastName = scanner.next();
 				System.out.print("Enter Email: ");
 				String email = scanner.next();
+				String[] str=UUID.randomUUID().toString().split("-");
 				Employee employee = service
-						.createEmployee(new Employee(UUID.randomUUID().toString(), firstName, lastName, email));
+						.createEmployee(new Employee(str[0], firstName, lastName, email));
 				System.out.println("Employee Created: " + employee.displayDetail());
 				break;
 			case 2:

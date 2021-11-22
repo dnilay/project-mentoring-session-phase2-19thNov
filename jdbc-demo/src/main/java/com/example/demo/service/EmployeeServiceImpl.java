@@ -70,7 +70,16 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public void deleteEmployee(String employeeId) {
-		// TODO Auto-generated method stub
+		Employee temEmployee=getEmployeeById(employeeId);
+		if(temEmployee==null)
+		{
+			System.out.println("no such employee found. ");
+		}
+		else
+		{
+			employees.remove(temEmployee);
+			System.out.println("employee removed sucessfully. ");
+		}
 		
 	}
 

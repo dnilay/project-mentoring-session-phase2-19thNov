@@ -77,7 +77,11 @@ public class App {
 					System.out.println(employee2.displayDetail());
 				}
 				break;
-
+			case 5:
+				System.out.print("Enter Employee ID: ");
+				employeeId = scanner.next();
+				service.deleteEmployee(employeeId);
+				break;
 			case 0:
 				System.out.println("Bye.!!!!");
 				System.exit(0);

@@ -9,5 +9,7 @@ public interface EmployeeService {
 	public Employee createEmployee(Employee employee);
 	
 	public List<Employee> getAllEmployees();
+	
+	public Employee getEmployeeById(String employeeId);
 
 }

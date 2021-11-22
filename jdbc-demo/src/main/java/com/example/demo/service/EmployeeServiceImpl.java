@@ -26,4 +26,18 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return employees;
 	}
 
+	@Override
+	public Employee getEmployeeById(String employeeId) {
+	Employee tempEmployee=null;
+		for(Employee employee:employees)
+		{
+			if(employee.getEmployeeId().equals(employeeId))
+			{
+				tempEmployee=employee;
+				break;
+			}
+		}
+		return tempEmployee;
+	}
+
 }

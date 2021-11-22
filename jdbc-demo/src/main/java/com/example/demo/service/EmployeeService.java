@@ -11,5 +11,7 @@ public interface EmployeeService {
 	public List<Employee> getAllEmployees();
 	
 	public Employee getEmployeeById(String employeeId);
+	public Employee updateEmployee(String employeeId);
+	public void deleteEmployee(String employeeId);
 
 }

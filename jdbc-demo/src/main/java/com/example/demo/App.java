@@ -22,6 +22,8 @@ public class App {
 				System.out.println("1. For Create Employee. ");
 				System.out.println("2. Display All Employees. ");
 				System.out.println("3. Find Employee By ID: ");
+				System.out.println("4. Update Employee By Employee ID: ");
+				System.out.println("5. Remove Employee By Employee ID: ");
 				System.out.println("0. Exit. ");
 				System.out.println("Enter your choice. ");
 				choice = scanner.nextInt();
@@ -60,6 +62,19 @@ public class App {
 					System.out.println("No Such Employee Found with id: " + employeeId);
 				} else {
 					System.out.println("employee found: " + employee2.displayDetail());
+				}
+				break;
+			case 4:
+				System.out.print("Enter Employee ID: ");
+				employeeId = scanner.next();
+				employee2=service.updateEmployee(employeeId);
+				if(employee2==null)
+				{
+					System.out.println("no such id found.");
+				}
+				else
+				{
+					System.out.println(employee2.displayDetail());
 				}
 				break;
 

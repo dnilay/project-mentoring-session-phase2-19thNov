@@ -27,4 +27,12 @@ public class Employee {
 	private String lastName;
 	@Column(name = "email")
 	private String email;
+	@Override
+	public String toString() {
+		return "Employee ID: "+employeeId+" first name: "+firstName+" last name: "+lastName+" email: "+email;
+	}
+	
+	
+	
+	
 }

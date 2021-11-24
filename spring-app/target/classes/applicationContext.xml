@@ -17,7 +17,8 @@
 	<constructor-arg index="2" value="MNC"/>
 </bean>
 	<bean name="theCoach" class="org.example.model.CricketCoach">
-		<constructor-arg index="0" ref="fortuneService"/>
+		<!--<constructor-arg index="0" ref="fortuneService"/>-->
+	<property name="fortuneService" ref="fortuneService"/>
 	</bean>
 <bean name="fortuneService" class="org.example.model.SadFortuneService">
 </bean>

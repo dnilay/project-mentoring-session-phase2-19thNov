@@ -9,7 +9,12 @@
 	<constructor-arg index="2" value="Doe"/>
 	<constructor-arg index="3" value="john@email.com"/>
 	<constructor-arg index="4" value="false"/>
+	<constructor-arg index="5" ref="address"/>
 </bean>
-
+<bean name="address" class="org.example.model.Address">
+	<constructor-arg index="0" value="ABCD"/>
+	<constructor-arg index="1" value="XYZ"/>
+	<constructor-arg index="2" value="MNC"/>
+</bean>
 
 </beans>

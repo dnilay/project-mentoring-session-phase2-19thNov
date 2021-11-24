@@ -22,4 +22,9 @@
 	</bean>
 <bean name="fortuneService" class="org.example.model.SadFortuneService">
 </bean>
+	<bean name="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/hr"/>
+		<property name="user" value="root"/>
+		<property name="password" value="root"/>
+	</bean>
 </beans>

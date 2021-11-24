@@ -16,5 +16,9 @@
 	<constructor-arg index="1" value="XYZ"/>
 	<constructor-arg index="2" value="MNC"/>
 </bean>
-
+	<bean name="theCoach" class="org.example.model.CricketCoach">
+		<constructor-arg index="0" ref="fortuneService"/>
+	</bean>
+<bean name="fortuneService" class="org.example.model.SadFortuneService">
+</bean>
 </beans>

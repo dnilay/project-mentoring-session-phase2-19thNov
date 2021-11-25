@@ -1,0 +1,14 @@
+2021-11-25 09:49:59.419  INFO 766 --- [main] c.example.demo.SpringMvcAppApplication   : Starting SpringMvcAppApplication using Java 11.0.13 on nilay-HP-EliteBook-840-G3 with PID 766 (/home/nilay/IdeaProjects/spring-mvc-app/target/classes started by nilay in /home/nilay/IdeaProjects/spring-mvc-app)
+2021-11-25 09:49:59.427  INFO 766 --- [main] c.example.demo.SpringMvcAppApplication   : No active profile set, falling back to default profiles: default
+2021-11-25 09:50:00.487  INFO 766 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2021-11-25 09:50:00.495  INFO 766 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-25 09:50:00.495  INFO 766 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-11-25 09:50:00.794  INFO 766 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-11-25 09:50:00.810  INFO 766 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-25 09:50:00.810  INFO 766 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1291 ms
+2021-11-25 09:50:01.133  INFO 766 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2021-11-25 09:50:01.154  INFO 766 --- [main] c.example.demo.SpringMvcAppApplication   : Started SpringMvcAppApplication in 2.437 seconds (JVM running for 3.462)
+2021-11-25 09:50:27.020  INFO 766 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-25 09:50:27.022  INFO 766 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-25 09:50:27.024  INFO 766 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-11-25 09:50:27.042  INFO 766 --- [http-nio-9999-exec-1] c.e.demo.controller.HomeController       : 9999

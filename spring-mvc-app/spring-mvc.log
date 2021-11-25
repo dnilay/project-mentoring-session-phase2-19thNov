@@ -12,3 +12,62 @@
 2021-11-25 09:50:27.022  INFO 766 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-11-25 09:50:27.024  INFO 766 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2021-11-25 09:50:27.042  INFO 766 --- [http-nio-9999-exec-1] c.e.demo.controller.HomeController       : 9999
+2021-11-25 10:49:42.031  INFO 981 --- [main] c.example.demo.SpringMvcAppApplication   : Starting SpringMvcAppApplication using Java 11.0.13 on nilay-HP-EliteBook-840-G3 with PID 981 (/home/nilay/IdeaProjects/spring-mvc-app/target/classes started by nilay in /home/nilay/IdeaProjects/spring-mvc-app)
+2021-11-25 10:49:42.041  INFO 981 --- [main] c.example.demo.SpringMvcAppApplication   : No active profile set, falling back to default profiles: default
+2021-11-25 10:49:43.480  INFO 981 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2021-11-25 10:49:43.490  INFO 981 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-25 10:49:43.490  INFO 981 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-11-25 10:49:43.793  INFO 981 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-11-25 10:49:43.807  INFO 981 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-25 10:49:43.807  INFO 981 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1591 ms
+2021-11-25 10:49:44.161  INFO 981 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2021-11-25 10:49:44.175  INFO 981 --- [main] c.example.demo.SpringMvcAppApplication   : Started SpringMvcAppApplication in 3.067 seconds (JVM running for 4.592)
+2021-11-25 10:49:57.916  INFO 981 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-25 10:49:57.918  INFO 981 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-25 10:49:57.920  INFO 981 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-11-25 10:49:57.942  INFO 981 --- [http-nio-9999-exec-1] c.e.demo.controller.HomeController       : 9999
+2021-11-25 10:56:58.229  INFO 1105 --- [main] c.example.demo.SpringMvcAppApplication   : Starting SpringMvcAppApplication using Java 11.0.13 on nilay-HP-EliteBook-840-G3 with PID 1105 (/home/nilay/IdeaProjects/spring-mvc-app/target/classes started by nilay in /home/nilay/IdeaProjects/spring-mvc-app)
+2021-11-25 10:56:58.232  INFO 1105 --- [main] c.example.demo.SpringMvcAppApplication   : No active profile set, falling back to default profiles: default
+2021-11-25 10:56:59.309  INFO 1105 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2021-11-25 10:56:59.317  INFO 1105 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-25 10:56:59.318  INFO 1105 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-11-25 10:56:59.635  INFO 1105 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-11-25 10:56:59.647  INFO 1105 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-25 10:56:59.647  INFO 1105 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1274 ms
+2021-11-25 10:56:59.975  INFO 1105 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2021-11-25 10:56:59.991  INFO 1105 --- [main] c.example.demo.SpringMvcAppApplication   : Started SpringMvcAppApplication in 2.469 seconds (JVM running for 3.569)
+2021-11-25 10:57:06.173  INFO 1105 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-25 10:57:06.175  INFO 1105 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-25 10:57:06.177  INFO 1105 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-11-25 10:57:06.204  INFO 1105 --- [http-nio-9999-exec-1] c.e.demo.controller.HomeController       : 9999
+2021-11-25 10:57:20.409  INFO 1105 --- [http-nio-9999-exec-2] c.e.demo.controller.HomeController       : John
+2021-11-25 10:58:47.637  INFO 1200 --- [main] c.example.demo.SpringMvcAppApplication   : Starting SpringMvcAppApplication using Java 11.0.13 on nilay-HP-EliteBook-840-G3 with PID 1200 (/home/nilay/IdeaProjects/spring-mvc-app/target/classes started by nilay in /home/nilay/IdeaProjects/spring-mvc-app)
+2021-11-25 10:58:47.641  INFO 1200 --- [main] c.example.demo.SpringMvcAppApplication   : No active profile set, falling back to default profiles: default
+2021-11-25 10:58:48.786  INFO 1200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2021-11-25 10:58:48.795  INFO 1200 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-25 10:58:48.795  INFO 1200 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-11-25 10:58:49.092  INFO 1200 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-11-25 10:58:49.104  INFO 1200 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-25 10:58:49.104  INFO 1200 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1375 ms
+2021-11-25 10:58:49.430  INFO 1200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2021-11-25 10:58:49.445  INFO 1200 --- [main] c.example.demo.SpringMvcAppApplication   : Started SpringMvcAppApplication in 2.471 seconds (JVM running for 3.439)
+2021-11-25 10:58:55.599  INFO 1200 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-25 10:58:55.600  INFO 1200 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-25 10:58:55.602  INFO 1200 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-11-25 10:58:55.621  INFO 1200 --- [http-nio-9999-exec-1] c.e.demo.controller.HomeController       : 9999
+2021-11-25 10:58:58.017  INFO 1200 --- [http-nio-9999-exec-2] c.e.demo.controller.HomeController       : John
+2021-11-25 11:00:41.070  INFO 1308 --- [main] c.example.demo.SpringMvcAppApplication   : Starting SpringMvcAppApplication using Java 11.0.13 on nilay-HP-EliteBook-840-G3 with PID 1308 (/home/nilay/IdeaProjects/spring-mvc-app/target/classes started by nilay in /home/nilay/IdeaProjects/spring-mvc-app)
+2021-11-25 11:00:41.081  INFO 1308 --- [main] c.example.demo.SpringMvcAppApplication   : No active profile set, falling back to default profiles: default
+2021-11-25 11:00:42.134  INFO 1308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2021-11-25 11:00:42.142  INFO 1308 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-25 11:00:42.143  INFO 1308 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-11-25 11:00:42.421  INFO 1308 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-11-25 11:00:42.434  INFO 1308 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-25 11:00:42.435  INFO 1308 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1239 ms
+2021-11-25 11:00:42.737  INFO 1308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2021-11-25 11:00:42.751  INFO 1308 --- [main] c.example.demo.SpringMvcAppApplication   : Started SpringMvcAppApplication in 2.29 seconds (JVM running for 3.387)
+2021-11-25 11:00:47.518  INFO 1308 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-25 11:00:47.519  INFO 1308 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-25 11:00:47.520  INFO 1308 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-11-25 11:00:47.540  INFO 1308 --- [http-nio-9999-exec-1] c.e.demo.controller.HomeController       : 9999
+2021-11-25 11:00:50.416  INFO 1308 --- [http-nio-9999-exec-2] c.e.demo.controller.HomeController       : John

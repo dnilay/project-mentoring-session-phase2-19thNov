@@ -9,4 +9,6 @@ public interface BeerService {
     public Beer createBeer(Beer beer);
 
     public List<Beer> fetchAllBeer();
+
+
 }

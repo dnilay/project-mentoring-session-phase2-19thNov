@@ -1,5 +1,6 @@
 package com.example.helloworldrestapi.controller;
 
+import com.example.helloworldrestapi.exception.BeerIdNotFoundException;
 import com.example.helloworldrestapi.model.Beer;
 import com.example.helloworldrestapi.service.BeerService;
 import lombok.extern.slf4j.Slf4j;
@@ -39,6 +40,7 @@ public class BeerController {
     @GetMapping("/beers/{id}")
     public ResponseEntity<Beer> getById(@PathVariable("id") Integer id)
     {
+
         return ResponseEntity.ok(beerService.getBeerById(id));
     }
 

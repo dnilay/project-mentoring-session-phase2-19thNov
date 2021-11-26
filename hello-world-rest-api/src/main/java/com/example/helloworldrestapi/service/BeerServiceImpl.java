@@ -1,5 +1,6 @@
 package com.example.helloworldrestapi.service;
 
+import com.example.helloworldrestapi.exception.BeerIdNotFoundException;
 import com.example.helloworldrestapi.model.Beer;
 import com.example.helloworldrestapi.repo.BeerRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -9,6 +10,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+
 @Service
 @Slf4j
 public class BeerServiceImpl implements BeerService{
@@ -39,7 +42,13 @@ public class BeerServiceImpl implements BeerService{
     @Override
     public Beer getBeerById(Integer id) {
         log.info("within findById method(service layer)");
-        return beerRepository.findById(id).get();
+        Optional<Beer> beer=beerRepository.findById(id);
+        if(beer.isEmpty())
+        {
+            throw new BeerIdNotFoundException("id "+id+" not found");
+        }
+
+        return beer.get();
         //return beerRepository.getById(id);
     }
 }

@@ -10,5 +10,7 @@ public interface BeerService {
 
     public List<Beer> fetchAllBeer();
 
+    public Beer getBeerById(Integer id);
+
 
 }

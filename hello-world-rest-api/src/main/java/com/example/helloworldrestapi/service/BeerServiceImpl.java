@@ -35,4 +35,11 @@ public class BeerServiceImpl implements BeerService{
         log.info("within findAll method(service layer)");
         return beerRepository.findAll();
     }
+
+    @Override
+    public Beer getBeerById(Integer id) {
+        log.info("within findById method(service layer)");
+        return beerRepository.findById(id).get();
+        //return beerRepository.getById(id);
+    }
 }

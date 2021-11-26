@@ -4,10 +4,9 @@ import com.example.helloworldrestapi.model.Beer;
 import com.example.helloworldrestapi.service.BeerService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -22,18 +21,25 @@ public class BeerController {
         this.beerService = beerService;
     }
     @PostMapping("/beers")
-    private Beer createBeer( @RequestBody  Beer beer)
+    private ResponseEntity createBeer(@RequestBody  Beer beer)
     {
         log.info("within createBeer(Controller Layer)");
 
-        return beerService.createBeer(beer);
+        Beer theBeer=beerService.createBeer(beer);
+        return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
     @GetMapping("/beers")
-    public List<Beer> getAll()
+    public ResponseEntity<List<Beer>> getAll()
     {
         log.info("within fetchAll(Controller Layer)");
-        return beerService.fetchAllBeer();
+        List<Beer> list=beerService.fetchAllBeer();
+        return new ResponseEntity<List<Beer>>(list,HttpStatus.OK);
+    }
+    @GetMapping("/beers/{id}")
+    public ResponseEntity<Beer> getById(@PathVariable("id") Integer id)
+    {
+        return ResponseEntity.ok(beerService.getBeerById(id));
     }
 
 

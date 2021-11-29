@@ -23,7 +23,7 @@ public class CustomerController {
     @RequestMapping("/status")
     public String getStatus()
     {
-        return "app is up: "+environment.getProperty("local.server.port");
+        return "customer-ws is up and running on port: "+environment.getProperty("local.server.port");
     }
 
     @PostMapping

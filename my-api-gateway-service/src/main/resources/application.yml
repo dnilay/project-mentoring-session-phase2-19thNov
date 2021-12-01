@@ -20,3 +20,7 @@ spring:
       discovery:
         locator:
           enabled: true
+  boot:
+    admin:
+      client:
+        url: http://localhost:9999

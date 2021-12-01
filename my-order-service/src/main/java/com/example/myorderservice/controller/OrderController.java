@@ -4,6 +4,7 @@ import com.example.myorderservice.model.Order;
 import com.example.myorderservice.proxy.CouponProxy;
 import com.example.myorderservice.service.OrderService;
 import com.example.myorderservice.shared.Coupon;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
@@ -31,11 +32,17 @@ public class OrderController {
     }
 
     @PostMapping
+    @CircuitBreaker(name = "myCircuitBreaker",fallbackMethod = "myTestFallBack")
     public ResponseEntity<Order> createOrder(@RequestBody Order order)
     {
         Coupon coupon=couponProxy.getCouponByCouponCode(order.getCouponCode());
         order.setDiscountedPrice(order.getOrderPrice()-coupon.getDiscountAmount());
         Order tempOrder=orderService.createOrder(order);
         return ResponseEntity.status(HttpStatus.CREATED).body(tempOrder);
+    }
+
+    public ResponseEntity<?> myTestFallBack(Exception e)
+    {
+        return ResponseEntity.ok("within myTestFallBack method. COUPON-WS is down"+e.toString());
     }
 }

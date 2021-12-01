@@ -1,0 +1,8 @@
+com\example\myorderservice\service\OrderService.class
+com\example\myorderservice\service\OrderServiceImpl.class
+com\example\myorderservice\proxy\CouponProxy.class
+com\example\myorderservice\dao\OrderDao.class
+com\example\myorderservice\MyOrderServiceApplication.class
+com\example\myorderservice\model\Order.class
+com\example\myorderservice\shared\Coupon.class
+com\example\myorderservice\controller\OrderController.class

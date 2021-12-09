@@ -1,3 +1,4 @@
+com\example\demo\config\SwaggerConfig.class
 com\example\demo\repositories\TodoRepository.class
 com\example\demo\controllers\TodoController.class
 com\example\demo\TodoAppApplication.class

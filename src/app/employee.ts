@@ -1,7 +1,7 @@
 export class Employee {
 
-  id: number | undefined;
-  firstName: string | undefined;
+  public id: number;
+  public firstName: string | undefined;
   lastName: string | undefined;
   emailId: string | undefined;
 }
